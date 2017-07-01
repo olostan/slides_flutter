@@ -1,0 +1,189 @@
+symbol {
+
+}
+
+#flutter {
+  color: black;
+}
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  background-image:linear-gradient(white, #AEF);
+  opacity: 1;
+  visibility: visible;
+}
+
+.s1 #flutter {
+  ::show;
+}
+#flutter_t {
+  font-size: 15vw;
+  font-stretch: condensed;
+}
+.s2 {
+  #flutter {
+    ::left(300);
+  }
+  #flutter_t {
+    ::show right(200) delay(0.2);
+  }
+}
+#emilies {
+  ::down(300) rotate(-30);
+  img {
+    width: 100vw;
+  }
+}
+.s3 {
+  #emilies: show up(300) rotate(30) delay(0.2);
+  #bg: hide;
+  #flutter_t: up(200) hide delay(0);
+  #flutter: up(200) hide  delay(0);
+}
+#mobdev: up(400);
+.s4 {
+  #emilies: down(300) rotate(30) delay(0) hide;
+  #mobdev: show down(400);
+}
+#native: down(300) left(250);
+#sep { ::down(300); color: red;}
+#web: down(300) right(200);
+.s5 {
+  #bg {
+  background-image:linear-gradient(white, #666);
+    ::show;
+  }
+  #mobdev: up(200);
+  #native: show up(250) delay(0.3);
+  #sep: show up(250);
+  #web: show up(250) delay(0.3);
+}
+#nat_bg {
+  width: 70vw;
+  height: 80vh;
+  background-color:rgba(255,255,255,0.8);
+  border: solid 1px black;
+  ::up(300);
+}
+#native_p1,#native_p2,#native_p3 { font-size: 6vmax; color: green; }
+#native_n1,#native_n2,#native_n3 { font-size: 6vmax; color: red; }
+#native_p1: right(500) down(60);
+#native_p2: right(500) down(60);
+#native_p3: right(500) down(60);
+#native_n1: right(500) down(60);
+#native_n2: right(500) down(60);
+#native_n3: right(500) down(60);
+
+.s6 {
+  #mobdev: scale(0.8,0.8) opacity(0.4)  delay(0);
+  #sep: opacity(0.4) scale(0.8,0.8) delay(0);
+  #web: opacity(0.1) up(280) delay(0);
+  #native: up(280) delay(0);
+  #nat_bg: show down(300);
+  #native_p1: show delay(0.3) left(500);
+}
+.s7 {
+  #native_p1: scale(0.8,0.8) up(70) delay(0);
+  #native_p2: show left(500);
+}
+.s8 {
+  #native_p1: up(70);
+  #native_p2: scale(0.8,0.8) up(70) delay(0);
+  #native_p3: show left(500);
+}
+.s9 {
+  #native_p1: up(70);
+  #native_p2: up(70);
+  #native_p3: scale(0.8,0.8) up(70) delay(0);
+  #native_n1: show left(500);
+}
+.s10 {
+  #native_n1: scale(0.8,0.8) down(70) delay(0);
+  #native_n2: show left(500);  
+}
+.s11 {
+  #native_n1: down(70);
+  #native_n2: scale(0.8,0.8) down(70) delay(0);
+  #native_n3: show left(500);  
+}
+.s12 {
+  #native_p1 { color: red; }
+  #native_p2 { color: red; ::delay(0.4);}
+  #native_p3 { color: red; ::delay(0.8);}
+  #native_n3 { color: green; ::delay(1.2);}
+  #native_n2 { color: green; ::delay(1.6);}
+  #native_n1 { color: green; ::delay(2.0);}
+  #web: opacity(1);
+  #sep: hide;
+  #native: opacity(0.1);
+}
+#fl_t {  ::up(480); padding: 10px; }
+.s13 {
+  #native_p1 { color: green; }
+  #native_p2 { color: green; ::delay(0.4);}
+  #native_p3 { color: green; ::delay(0.8);}  
+  #web: opacity(0);
+  #native: opacity(0);
+  #fl_t: show down(200);
+  #mobdev: hide;
+}
+#want { ::up(300) rotate(30); img { width: 80vw;height: 80vh;} }
+.s14 {
+  #nat_bg: rotate(80) down(500) hide;
+  #native_p1: down(600) hide delay(0.1);
+  #native_p2: down(500) hide delay(0.2);
+  #native_p3: down(400) hide delay(0.3);
+  #native_n1: down(300) hide delay(0.4);
+  #native_n2: down(200) hide delay(0.5);
+  #native_n3: down(300) hide delay(0.4);
+  #want: show down(300) delay(0.6) scale(1.2,1.2) rotate(-30);
+  #fl_t { ::scale(1.5,1.5); text-shadow: 0 0  10px white; background-color: rgba(255,255,255,0.3);;}
+}
+.s15 {
+  #want: down(400) rotate(30) hide delay(0);
+  #fl_t { background-color: inherit; text-shadow: inherit;}
+  #fl_in: show;
+}
+#doc: left(700);
+#doc_s: down(600);
+.s16 {
+  #fl_in: right(700) delay(0.2) hide;
+  #doc: right(700) show;
+  #doc_s: up(400) show delay(0.4);
+}
+#doc_out {  ::down(500); img { width: 90vw; } }
+.s17 {
+  #fl_t: hide;
+  #doc: up(500) hide;
+  #doc_s: up(300) hide;
+  #doc_out: up(500) show delay(0.3);
+}
+#hellow: rotate(0,-90);
+.s18 {
+  #doc_out: rotate(0,90) hide;
+  #hellow: show rotate(0,90) delay(0.6);
+}
+#arch{ ::up(300); img { width: 90vw;} }
+.s19 {
+  #hellow: down(500) hide;
+  #arch: show down(300);
+}
+#awe { 
+  ::up(300);
+  font-size: 4vw;width: 90vw;text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 25px black;
+  a { text-decoration: none;}
+
+}
+.s20 {
+  #arch: scale(1.4,1.4) hide;
+  #bg {   background-image:linear-gradient(white, #AEF); }
+  #awe: show down(300);  
+  #flutter: right(300) down(200) scale(1.4,1.4); 
+}
+.s21 {
+  #awe: scale(0.4,0.4) hide delay(0.2) down(40);
+  #flutter: show scale(-0.4,-0.4) down(20);
+}
