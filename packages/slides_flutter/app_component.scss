@@ -1,0 +1,189 @@
+symbol {
+
+}
+
+#flutter {
+  color: black;
+}
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  background-image:linear-gradient(white, #AEF);
+  opacity: 1;
+  visibility: visible;
+}
+
+.s1 #flutter {
+  opacity:1;
+}
+#flutter_t {
+  font-size: 15vw;
+  font-stretch: condensed;
+}
+.s2 {
+  #flutter {
+    transform:translateX(-300px);
+  }
+  #flutter_t {
+    opacity:1;transform:translateX(200px);transition-delay: 0.2s;
+  }
+}
+#emilies {
+  transform:translateY(300px) rotateX(-30deg);
+  img {
+    width: 100vw;
+  }
+}
+.s3 {
+  #emilies{ opacity:1;transform:translateY(0px) rotateX(0deg);transition-delay: 0.2s;}
+  #bg{ opacity:0;}
+  #flutter_t{ opacity:0;transform:translateX(200px) translateY(-200px);transition-delay: 0s;}
+  #flutter{ opacity:0;transform:translateX(-300px) translateY(-200px);transition-delay: 0s;}
+}
+#mobdev{ transform:translateY(-400px);}
+.s4 {
+  #emilies{ opacity:0;transform:translateY(300px) rotateX(30deg);transition-delay: 0s;}
+  #mobdev{ opacity:1;transform:translateY(0px);}
+}
+#native{ transform:translateX(-250px) translateY(300px);}
+#sep { transform:translateY(300px); color: red;}
+#web{ transform:translateX(200px) translateY(300px);}
+.s5 {
+  #bg {
+  background-image:linear-gradient(white, #666);
+    opacity:1;
+  }
+  #mobdev{ transform:translateY(-200px);}
+  #native{ opacity:1;transform:translateX(-250px) translateY(50px);transition-delay: 0.3s;}
+  #sep{ opacity:1;transform:translateY(50px);}
+  #web{ opacity:1;transform:translateX(200px) translateY(50px);transition-delay: 0.3s;}
+}
+#nat_bg {
+  width: 70vw;
+  height: 80vh;
+  background-color:rgba(255,255,255,0.8);
+  border: solid 1px black;
+  transform:translateY(-300px);
+}
+#native_p1,#native_p2,#native_p3 { font-size: 6vmax; color: green; }
+#native_n1,#native_n2,#native_n3 { font-size: 6vmax; color: red; }
+#native_p1{ transform:translateX(500px) translateY(60px);}
+#native_p2{ transform:translateX(500px) translateY(60px);}
+#native_p3{ transform:translateX(500px) translateY(60px);}
+#native_n1{ transform:translateX(500px) translateY(60px);}
+#native_n2{ transform:translateX(500px) translateY(60px);}
+#native_n3{ transform:translateX(500px) translateY(60px);}
+
+.s6 {
+  #mobdev{ opacity:0.4;transform:translateY(-200px) scaleX(0.8) scaleY(0.8);transition-delay: 0s;}
+  #sep{ opacity:0.4;transform:translateY(50px) scaleX(0.8) scaleY(0.8);transition-delay: 0s;}
+  #web{ opacity:0.1;transform:translateX(200px) translateY(-230px);transition-delay: 0s;}
+  #native{ transform:translateX(-250px) translateY(-230px);transition-delay: 0s;}
+  #nat_bg{ opacity:1;transform:translateY(0px);}
+  #native_p1{ opacity:1;transform:translateX(0px) translateY(60px);transition-delay: 0.3s;}
+}
+.s7 {
+  #native_p1{ transform:translateX(0px) translateY(-10px) scaleX(0.8) scaleY(0.8);transition-delay: 0s;}
+  #native_p2{ opacity:1;transform:translateX(0px) translateY(60px);}
+}
+.s8 {
+  #native_p1{ transform:translateX(0px) translateY(-80px) scaleX(0.8) scaleY(0.8);}
+  #native_p2{ transform:translateX(0px) translateY(-10px) scaleX(0.8) scaleY(0.8);transition-delay: 0s;}
+  #native_p3{ opacity:1;transform:translateX(0px) translateY(60px);}
+}
+.s9 {
+  #native_p1{ transform:translateX(0px) translateY(-150px) scaleX(0.8) scaleY(0.8);}
+  #native_p2{ transform:translateX(0px) translateY(-80px) scaleX(0.8) scaleY(0.8);}
+  #native_p3{ transform:translateX(0px) translateY(-10px) scaleX(0.8) scaleY(0.8);transition-delay: 0s;}
+  #native_n1{ opacity:1;transform:translateX(0px) translateY(60px);}
+}
+.s10 {
+  #native_n1{ transform:translateX(0px) translateY(130px) scaleX(0.8) scaleY(0.8);transition-delay: 0s;}
+  #native_n2{ opacity:1;transform:translateX(0px) translateY(60px);}  
+}
+.s11 {
+  #native_n1{ transform:translateX(0px) translateY(200px) scaleX(0.8) scaleY(0.8);}
+  #native_n2{ transform:translateX(0px) translateY(130px) scaleX(0.8) scaleY(0.8);transition-delay: 0s;}
+  #native_n3{ opacity:1;transform:translateX(0px) translateY(60px);}  
+}
+.s12 {
+  #native_p1 { color: red; }
+  #native_p2 { color: red; transition-delay: 0.4s;}
+  #native_p3 { color: red; transition-delay: 0.8s;}
+  #native_n3 { color: green; transition-delay: 1.2s;}
+  #native_n2 { color: green; transition-delay: 1.6s;}
+  #native_n1 { color: green; transition-delay: 2.0s;}
+  #web{ opacity:1;}
+  #sep{ opacity:0;}
+  #native{ opacity:0.1;}
+}
+#fl_t {  transform:translateY(-480px); padding: 10px; }
+.s13 {
+  #native_p1 { color: green; }
+  #native_p2 { color: green; }
+  #native_p3 { color: green; }  
+  #web{ opacity:0;}
+  #native{ opacity:0;}
+  #fl_t{ opacity:1;transform:translateY(-280px);}
+  #mobdev{ opacity:0;}
+}
+#want { transform:translateY(-300px) rotateX(30deg); img { width: 80vw;height: 80vh;} }
+.s14 {
+  #nat_bg{ opacity:0;transform:translateY(500px) rotateX(80deg);}
+  #native_p1{ opacity:0;transform:translateX(0px) translateY(450px) scaleX(0.8) scaleY(0.8);transition-delay: 0.1s;}
+  #native_p2{ opacity:0;transform:translateX(0px) translateY(420px) scaleX(0.8) scaleY(0.8);transition-delay: 0.2s;}
+  #native_p3{ opacity:0;transform:translateX(0px) translateY(390px) scaleX(0.8) scaleY(0.8);transition-delay: 0.3s;}
+  #native_n1{ opacity:0;transform:translateX(0px) translateY(500px) scaleX(0.8) scaleY(0.8);transition-delay: 0.4s;}
+  #native_n2{ opacity:0;transform:translateX(0px) translateY(330px) scaleX(0.8) scaleY(0.8);transition-delay: 0.5s;}
+  #native_n3{ opacity:0;transform:translateX(0px) translateY(360px);transition-delay: 0.4s;}
+  #want{ opacity:1;transform:translateY(0px) rotateX(0deg) scaleX(1.2) scaleY(1.2);transition-delay: 0.6s;}
+  #fl_t { transform:translateY(-280px) scaleX(1.5) scaleY(1.5); text-shadow: 0 0  10px white; background-color: rgba(255,255,255,0.3);;}
+}
+.s15 {
+  #want{ opacity:0;transform:translateY(400px) rotateX(30deg) scaleX(1.2) scaleY(1.2);transition-delay: 0s;}
+  #fl_t { background-color: inherit; text-shadow: inherit;}
+  #fl_in{ opacity:1;}
+}
+#doc{ transform:translateX(-700px);}
+#doc_s{ transform:translateY(600px);}
+.s16 {
+  #fl_in{ opacity:0;transform:translateX(700px);transition-delay: 0.2s;}
+  #doc{ opacity:1;transform:translateX(0px);}
+  #doc_s{ opacity:1;transform:translateY(200px);transition-delay: 0.4s;}
+}
+#doc_out {  transform:translateY(500px); img { width: 90vw; } }
+.s17 {
+  #fl_t{ opacity:0;}
+  #doc{ opacity:0;transform:translateX(0px) translateY(-500px);}
+  #doc_s{ opacity:0;transform:translateY(-100px);}
+  #doc_out{ opacity:1;transform:translateY(0px);transition-delay: 0.3s;}
+}
+#hellow{ transform:rotateX(0deg) rotateY(-90deg);}
+.s18 {
+  #doc_out{ opacity:0;transform:translateY(0px) rotateX(0deg) rotateY(90deg);}
+  #hellow{ opacity:1;transform:rotateX(0deg) rotateY(0deg);transition-delay: 0.6s;}
+}
+#arch { transform:translateY(-300px); img { width: 90vw;} }
+.s19 {
+  #hellow{ opacity:0;transform:translateY(500px) rotateX(0deg) rotateY(0deg);}
+  #arch{ opacity:1;transform:translateY(0px);}
+}
+#awe { 
+  transform:translateY(-300px);
+  font-size: 4vw;width: 90vw;text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 25px black;
+  a { text-decoration: none;}
+
+}
+.s20 {
+  #arch{ opacity:0;transform:translateY(0px) scaleX(1.4) scaleY(1.4);}
+  #bg {   background-image:linear-gradient(white, #AEF); }
+  #awe{ opacity:1;transform:translateY(0px);}  
+  #flutter{ transform:translateX(0px) translateY(0px) scaleX(1.4) scaleY(1.4);} 
+}
+.s21 {
+  #awe{ opacity:0;transform:translateY(40px) scaleX(0.4) scaleY(0.4);transition-delay: 0.2s;}
+  #flutter{ opacity:1;transform:translateX(0px) translateY(20px) scaleX(0.9999999999999999) scaleY(0.9999999999999999);}
+}
